@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  bot:
+    build: .
+    depends_on:
+    - mongo
+    - safebrowsing
+  mongo:
+    image: mongo
+    restart: unless-stopped
+  safebrowsing:
+    image: christiandt/google-safebrowsing
+    

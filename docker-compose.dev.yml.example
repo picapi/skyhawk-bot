@@ -1,0 +1,14 @@
+version: '3.9'
+services:
+  mongo:
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: admin
+      # These don't especially matter if using the local docker database, as long as it's not being exposed.
+  bot:
+    environment:
+      MONGODB_URI: "mongodb://admin:admin@mongo:27017"
+      # If connecting to an external database, replace this URI
+      BOT_TOKEN: "[DISCORD TOKEN]"
+  safebrowsing:
+    command: "-apikey [GOOGLE SAFE BROWSING API KEY]"

@@ -1,0 +1,8 @@
+{
+    "clientId": "<Bot Client ID>",
+    "guildId": "<Guild ID>",
+    "about": {
+        "version": "DEV-20210902",
+        "description": "An Discord Bot, written using discord.js by <@108983846103461888> to allow you to better secure your server 😎!"
+    }
+}
